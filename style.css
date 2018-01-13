@@ -1,0 +1,115 @@
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			font-family: 'Crimson Text', serif;
+			//background-color: rgba(33, 33, 33,1.0); 
+		}
+		.form-box{
+			position: relative;
+			//background-color: rgba(33, 33, 33,1.0); 
+			height: 100%;
+			width: 80%;
+			margin: auto;
+		}
+		.field-box{
+			margin-bottom: 40px;
+		}
+		.field-box input,.field-box label{
+			outline: none;
+			border: none;
+			width: 100%;
+			margin: 0;
+		}
+		.field-box input{
+			padding: 14px 8px;
+			color: rgba(46, 204, 113,1.0);
+			font-size: 20px;
+			margin-top: 8px;
+		} 
+		.ns-title{
+			padding: 12px;
+			font-size: 24px;
+			text-transform: capitalize;
+		}
+		.light{
+			background-color: rgba(250, 250, 250,1.0);
+		}
+		.f-light{
+			background-color: rgba(224, 224, 224,0.5); 
+		}
+		.t-light{
+			color: rgba(250, 250, 250,1.0);
+		}
+		.dark{
+			background-color: rgba(33, 33, 33,1.0); 
+		}
+		.f-dark{
+			background-color: rgba(66, 66, 66,1.0);
+		}
+		.t-dark{
+			color: rgba(33, 33, 33,1.0);
+		}
+		.form-box input:focus {
+			color: rgba(255, 152, 0,1.0);
+			//opacity: 0.7;
+		}
+
+		.tool{
+			position: relative;
+			width: 100%;
+			height: 40px;
+			margin:50px 0px 30px;
+			//background-color: red;
+		}
+		.my-name{
+			font-family: 'Dancing Script', cursive;
+			font-size: 34px;
+			color: red;
+			transform: rotate(-30deg);
+			position: absolute;
+		}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float: right;
+		}
+		.fl:after ,.fr:after{
+			content: " ";
+			clear: both;
+			display: block;
+		}
+		.color-btn{
+			padding: 12px;
+		}
+		.color-btn i:hover{
+			cursor: pointer;
+		}
+		.top-nav{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			padding: 6px 2px;
+			background-color: rgba(255, 111, 0,1.0);	
+			z-index: 6;
+		}
+		@media only screen and (max-width:352px)
+		{
+			.top-nav h2{
+				display: none;
+			}
+		}
+		h2,.side-nav-btn,.top-nav-tool{
+			display: inline;
+			font-size: 24px;
+			padding: 6px;
+			line-height: 30px;
+		}
+		.error{
+			border: 2px solid 'red';
+		}
